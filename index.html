@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Concert+One&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Jersey+25&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lugrasimo&family=Macondo&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Revolution&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300..700&family=Yatra+One&family=Young+Serif&display=swap"
+    rel="stylesheet">
+  <style>
+    * {
+      font-family: Space Grotesk;
+      padding: 0;
+      font-size: 18px;
+      margin: 0;
+      color: hsl(0, 0%, 100%);
+    }
+
+    #button {
+      background-color: hsl(278, 68%, 11%);
+      border-radius: 8px;
+      margin-top: 20px;
+      border: none;
+      width: 102.8%;
+      height: 40px;
+    }
+
+    .container {
+      display: flex;
+
+      height: 100vh;
+    }
+
+    .row1 {
+      width: 35%;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      /* width: fit-content; */
+      height: 800px;
+      /* width: 100%; */
+      background-image: url("images/bg-main-desktop.png");
+    }
+
+    .form {
+      color: hsl(278, 68%, 11%);
+    }
+
+    .card1 {
+      background-image: url("images/bg-card-front.png");
+      width: 447px;
+      height: 245px;
+      padding-top: 30px;
+      padding-left: 40px;
+      margin-left: 110px;
+      /* width: 100%; */
+      /* height: 100%; */
+      position: absolute;
+      background-position: center;
+      background-repeat: no-repeat;
+      /* padding: 30px; */
+      margin-top: 100px;
+    }
+
+    .card2 {
+
+      padding: 30px;
+      margin-top: 360px;
+      margin-left: 200px;
+      position: absolute;
+    }
+
+    .cardnum {
+      margin-top: 70px;
+      text-align: center;
+      margin-left: -40px;
+      letter-spacing: 2px;
+      font-size: 33px;
+      /* color: hsl(270, 3%, 87%); */
+    }
+
+    .detail {
+      width: 100%;
+      margin: 20px 10px 20px 0px;
+      display: flex;
+    }
+
+    .num {
+      width: 50%;
+      padding-left:45px;
+      text-align: right;
+    }
+
+    .name {
+      /* width: 50%; */
+    }
+
+    .number {
+      top: 140px;
+      right: 90px;
+      position: absolute;
+    }
+
+    .row2 {
+      width: 65%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: hsl(0, 0%, 100%);
+    }
+
+    .formdetail {
+      width: 100%;
+      margin-left: 330px;
+      margin-right: 150px;
+    }
+
+    .form-control {
+      height: 35px;
+      margin-top: 8px;
+      border-radius: 8px;
+      font-size: 16px;
+      border: 1px solid hsl(270, 3%, 87%);
+      color: hsl(270, 3%, 87%);
+      width: 100%;
+      padding-left: 10px;
+    }
+
+    #exp {
+      margin-right: 7px;
+      width: 39%;
+    }
+
+    #cvc {
+      width: 100%;
+    }
+
+    .expiry {
+      display: flex;
+      margin-top: 20px;
+    }
+
+    .ex1 {
+      width: 50%;
+    }
+
+    .ex2 {
+      width: 50%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row1">
+      <div class="col1">
+        <div class="card1">
+          <div class="logocard">
+            <img src="C:\Users\SHARM\Downloads\interactive-card-details-form-main\images\card-logo.svg" alt=""
+              srcset="">
+          </div>
+          <div class="cardnum">
+            0000 0000 0000 0000
+          </div>
+          <div class="detail">
+            <div class="name">
+              Jane Appleseed
+            </div>
+            <div class="num">
+              00/00
+            </div>
+          </div>
+        </div>
+        <div class="card2">
+          <img src="C:\Users\SHARM\Downloads\interactive-card-details-form-main\images\bg-card-back.png" alt=""
+            srcset="">
+          <div class="number">000</div>
+        </div>
+      </div>
+      <div class="col2"></div>
+    </div>
+    <div class="row2">
+      <div class="formdetail">
+        <form action="">
+          <label for="name" class="form">CARDHOLDER NAME</label><br>
+          <input class="form-control" type="text" id="name" name="CARDHOLDER NAME" placeholder="e.g. Jane Appleseed">
+          <label for="num" class="form"><br>
+            CARD NUMBER
+            <br>
+            <input class="form-control" type="number" id="num" name="CARD NUMBER"
+              placeholder="e.g. 1234 5678 9123 0000">
+          </label>
+          <div>
+            <div class="expiry">
+              <div class="ex1">
+                <label for="exp" class="form">EXP. DATE (MM/YY)<br>
+                  <input class="form-control" type="text" name="month" placeholder="MM" maxlength="2" size="2"
+                    id="exp">
+                    <input type="text" name="year" placeholder="YY" maxlength="2" size="2" class="form-control"
+                    id="exp">
+                </label>
+              </div>
+              <div class="ex2">
+                <label class="form">
+                  CVC<br>
+                  <input type="text" class="form-control" placeholder="CVC" maxlength="3" id="cvc"></label>
+              </div>
+            </div>
+            <button type="button" id="button">Confirm</button>
+          </div>
+        </form>
+        <!-- 
+      <span>/</span>
+       -->
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> displays site properly based on user's device
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  Feel free to remove these styles or customise in your own stylesheet 👍
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  0000 0000 0000 0000
+  Jane Appleseed
+  00/00
+
+  000
+
+  Cardholder Name
+
+
+  Card Number
+  e.g. 1234 5678 9123 0000
+
+  Exp. Date (MM/YY)
+  MM
+  YY
+
+  CVC
+  e.g. 123
+
+  Confirm
+
+  Completed state start
+
+  Thank you!
+  We've added your card details
+  Continue
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html> -->
